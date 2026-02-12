@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright 2025 The Board of Trustees of the Leland Stanford Junior University
+# Copyright 2025-2026 The Board of Trustees of the Leland Stanford Junior University
 # Copyright 2019 Fabrice Normandin
 # Copyright 2021 Elad Richardson
 
@@ -7,7 +7,13 @@ __version__ = "0.8.0"
 
 from .argparsing import parse, wrap
 from .cfgparsing import dump, load, loads
-from .choice_types import CHOICE_TYPE_KEY, ChoiceRegistry, ChoiceType, PluginRegistry
+from .choice_types import (
+    CHOICE_TYPE_KEY,
+    ChoiceRegistry,
+    ChoiceType,
+    PluginRegistry,
+    QNamePluginRegistry,
+)
 from .fields import field
 from .options import ConfigType, Options, config_type
 from .parsers.decoding import decode
@@ -25,6 +31,7 @@ __all__ = [
     "Options",
     "ParsingError",
     "PluginRegistry",
+    "QNamePluginRegistry",
     "config_type",
     "decode",
     "dump",
